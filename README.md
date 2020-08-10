@@ -1,2 +1,3 @@
-# quantum
-Open source quantum work
+### Quantum
+
+Repository that stores all quantum work I've done.
