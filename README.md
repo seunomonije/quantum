@@ -3,5 +3,5 @@
 Repository that stores all quantum work I've done.
 
 Includes:
-  - Jupyter Notebook with Qiskit Notes
+  - Jupyter Notebook with Qiskit notes
   - Snippets of C++ code for decoder implementation. Unfortunately, I will not be posting any significant code publicly.
