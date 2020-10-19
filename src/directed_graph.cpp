@@ -2,6 +2,7 @@
 #include <map>
 #include <list>
 #include <cstring>
+
 using namespace std;
 
 class Vertex {
