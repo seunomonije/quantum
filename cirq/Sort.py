@@ -1,12 +1,3 @@
-import cirq
-import numpy as np
-import matplotlib 
-import random 
-import socket
-import select
-import time
-import pickle
-
 class Sort:
 
   def __init__(self, arr):
@@ -14,7 +5,7 @@ class Sort:
 
   def mergeSort(self, arr):
     if len(arr) > 1:
-        mid = len(arr)//2 # // signifies floor division
+        mid = len(arr)//2 # signifies floor division
         left = arr[:mid]
         right = arr[mid:]
 
