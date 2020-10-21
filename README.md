@@ -4,4 +4,5 @@ Repository that stores all quantum work I've done.
 
 Includes:
   - Jupyter Notebook with Qiskit notes
-  - Snippets of C++ code for decoder implementation. Unfortunately, I will not be posting any significant code publicly.
+  - Cirq implementations of common quantum algorithms
+  - C++ implementations...more info soon.
