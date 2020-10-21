@@ -48,7 +48,7 @@ class Graph {
      * 
      * twoWay flag signifies if the edge should be bi-directional or not. True = bi-directional.
      */
-    void addEdge(Vertex source, Vertex destination, bool twoWay, int weight){
+    void addEdge(Vertex source, Vertex destination, bool twoWay, int weight) {
       pair<Vertex, int> weightedLocation = make_pair(destination, weight);
       vertexList[source].push_back(weightedLocation);
 
