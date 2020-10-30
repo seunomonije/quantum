@@ -1,4 +1,8 @@
 ### C++ work
 
+NOTE:
+  Code is currently unorganized so you will need to fix organization if cloning.
+
 Includes:
-  - Implementation of custom graph data structure
+  - utils
+      - Implementation of custom graph data structure

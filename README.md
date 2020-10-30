@@ -3,6 +3,6 @@
 Repository that stores all quantum work I've done.
 
 Includes:
-  - Jupyter Notebook with Qiskit notes
+  - Qiskit work on repetition codes
   - Cirq implementations of common quantum algorithms
   - C++ implementations...more info soon.
