@@ -1,0 +1,5 @@
+# Virtual environments
+qiskitEnv/
+
+# Caches
+__pycache__/
