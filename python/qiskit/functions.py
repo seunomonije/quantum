@@ -10,14 +10,35 @@ from qiskit.providers.aer.noise.errors import pauli_error, depolarizing_error
 # Custom datatypes
 from datatypes import CircuitResultPair
 
-# Global variables
-global backend
-backend = Aer.get_backend('qasm_simulator')
+"""
+  NOTE: this layout is specific only for the ibmq_athens system
+"""
+def get_initial_layout(code, line):
+  return {
+    code.code_qubit[0] : line[0],
+    code.code_qubit[1] : line[2],
+    code.code_qubit[2] : line[4],
+    code.link_qubit[0] : line[1],
+    code.link_qubit[1] : line[3]
+  }
+  
+"""
+  Helper to retrieve results from a pre-provided code
+"""
+def get_raw_results(code, backend, noise_model=None):
+  circuits = code.get_circuit_list()
+  raw_results = {}
+  for log in range(2):
+    job = execute(circuits[log], backend, noise_model=noise_model)
+    raw_results[str(log)] = job.result().get_counts(str(log))
+
+  return raw_results
+
 
 """
   Playground when going through IBM tutorial.
 """
-def run_ancilla_circuit_playground():
+def run_ancilla_circuit_playground(backend):
   working_qubits = QuantumRegister(2, 'working_qubits')
   ancilla_qubit = QuantumRegister(1, 'ancilla_qubit')
   syndrome_bit = ClassicalRegister(1, 'syndrome_bit')

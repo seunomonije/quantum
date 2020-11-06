@@ -1,1 +1,1 @@
-python3 repetition_code_tutorial.py
+cat secrets/APIKey.txt | python3 main.py

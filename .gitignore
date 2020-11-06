@@ -1,5 +1,12 @@
+# API key
+APIKey.txt
+
 # Virtual environments
 qiskitEnv/
 
 # Caches
 __pycache__/
+
+# Playgrounds
+playground.py
+methodstorage.py

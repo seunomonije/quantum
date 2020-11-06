@@ -1,2 +1,2 @@
 all:
-	bash scripts/run.sh
+	chmod +x scripts/run.sh
