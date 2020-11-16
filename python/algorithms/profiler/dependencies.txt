@@ -1,0 +1,6 @@
+pandas
+matplotlib
+networkx
+imageio
+snakeviz
+gprof2dot

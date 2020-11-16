@@ -3,9 +3,13 @@ APIKey.txt
 
 # Virtual environments
 qiskitEnv/
+env/
 
 # Caches
 __pycache__/
+
+# Images
+*.png
 
 # Playgrounds
 playground.py

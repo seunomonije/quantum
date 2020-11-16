@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -z "$1" ];
+  then
+    echo "Syntax: ./profile [filename] [optional_parameters]"
+  else
+    eval "python -m cProfile -s time $1 > profiling_dumps/cProfile_sorted_time.txt"
+
+    if [ "$2" == "snake" ]
+      then
+        eval "python -m cProfile -o profiling_dumps/cProfile.profile $1"
+        eval "snakeviz profiling_dumps/cProfile.profile"
+    elif [ "$2" == "simple" ]
+      then
+        eval "python -m cProfile -o profiling_dumps/cProfile_stats.pstats $1"
+        eval "gprof2dot -f pstats profiling_dumps/cProfile_stats.pstats | dot -Tpng -o images/output.png && open images/output.png"
+    fi
+fi
